@@ -15,3 +15,19 @@ $(".pullOutIcon").click(function(){
 	$(".leftMenu").toggleClass("hiddenMenu");
 	$(".contentBox").toggleClass("fullContent");
 });
+
+$(".accordionPanel").children("a").click(function (e) {
+    e.preventDefault();
+    let isTrue = false;
+    if ($(this).hasClass("activeAccordion")) {
+        isTrue = true;
+    }
+    console.log($(this).parent().parent());
+    $(this).parent().parent().find(".activeAccordion").siblings(".accordionContents").slideUp("fast");
+    $(this).parent().parent().find(".activeAccordion").removeClass("activeAccordion");
+    if (!isTrue) {
+        $(this).addClass("activeAccordion");
+        $(this).siblings(".accordionContents").slideDown("fast");
+    }
+    
+})

@@ -11,6 +11,11 @@
 		background-color:$white;
 	}
 }*/
+.whiteText {
+  color: #f3f3f3 !important;
+  font-size: 80%;
+  margin-top: 20px; }
+
 .leftMenu .pullOutIcon {
   transition: all 0.4s;
   -webkit-transition: all 0.4s;
@@ -137,5 +142,41 @@
       -webkit-transition: all 0.4s; } }
   .contentBox h3 {
     color: #4E598C; }
+
+.accordionContainer {
+  display: block;
+  width: 100%;
+  position: relative;
+  margin-bottom: 15px; }
+  .accordionContainer .accordionPanel > a {
+    display: block;
+    width: 100%;
+    background-color: #f3f3f3;
+    padding: 15px;
+    color: #4E598C;
+    text-decoration: none; }
+    .accordionContainer .accordionPanel > a:hover {
+      color: #5386E4; }
+    .accordionContainer .accordionPanel > a i {
+      color: black;
+      position: relative;
+      float: right;
+      display: block;
+      font-size: 20px;
+      transition: all 0.25s;
+      -webkit-transition: all 0.25s; }
+    .accordionContainer .accordionPanel > a.activeAccordion i {
+      transform: rotate(180deg); }
+  .accordionContainer .accordionPanel > .accordionContents {
+    padding: 15px;
+    border: 1px solid #f3f3f3;
+    border-top: none;
+    display: none; }
+    .accordionContainer .accordionPanel > .accordionContents h4 {
+      font-size: 115%; }
+
+.subTitle {
+  color: #666;
+  font-style: italic; }
 
 /*# sourceMappingURL=styles.css.map */
