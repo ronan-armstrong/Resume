@@ -43,7 +43,6 @@
 @media (max-width: 768px) {
   .leftMenu {
     width: 80%;
-    max-width: 400px;
     height: 100%;
     position: fixed;
     top: 0px;
@@ -51,9 +50,9 @@
     background-color: #1c1c1c;
     transition: all 0.4s;
     -webkit-transition: all 0.4s;
-    left: -80%; }
+    right: 100%; }
     .leftMenu.hiddenMenu {
-      left: 0px; }
+      right: 20%; }
       .leftMenu.hiddenMenu > .pullOutIcon {
         transform: rotate(0deg); }
     .leftMenu .pullOutIcon {
@@ -67,6 +66,10 @@
   right: 0px;
   top: 0px;
   padding: 20px; }
+  @media (max-width: 768px) {
+    .leftMenu .menuContainer {
+      overflow-y: scroll;
+      height: 100%; } }
   .leftMenu .menuContainer h2 {
     color: white;
     font-family: "Manjari", sans-serif;

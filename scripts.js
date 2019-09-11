@@ -31,3 +31,21 @@ $(".accordionPanel").children("a").click(function (e) {
     }
     
 })
+
+jQuery.fn.scrollTo = function (elem, speed) {
+    $(this).animate({
+        scrollTop: $(this).scrollTop() - $(this).offset().top + $(elem).offset().top
+    }, speed == undefined ? 1000 : speed);
+    return this;
+};
+
+$(".mainNav a").click(function (e) {
+    var attr = $(this).attr("href");
+    $(".contentBox").scrollTo(attr);
+});
+$(document).ready(function () {
+    var path = window.location.hash;
+    if (path) {
+        $(".contentBox").scrollTo(path);
+    }
+});
