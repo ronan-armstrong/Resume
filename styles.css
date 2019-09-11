@@ -1,0 +1,141 @@
+/*body{
+	background-color:$main;
+	&:after{
+		content:" ";
+		display:block;
+		position:fixed;
+		width:50%;
+		height:100%;
+		top:0px;
+		right:0px;
+		background-color:$white;
+	}
+}*/
+.leftMenu .pullOutIcon {
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  position: absolute;
+  left: calc(100% + 10px);
+  top: 10px;
+  font-size: 30px;
+  z-index: 32; }
+  .leftMenu .pullOutIcon > a {
+    color: #B3001B; }
+@media (min-width: 768px) {
+  .leftMenu {
+    width: 40%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #1c1c1c;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s; }
+    .leftMenu.hiddenMenu {
+      left: -40%; }
+      .leftMenu.hiddenMenu > .pullOutIcon {
+        transform: rotate(180deg); } }
+@media (max-width: 768px) {
+  .leftMenu {
+    width: 80%;
+    max-width: 400px;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 30;
+    background-color: #1c1c1c;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    left: -80%; }
+    .leftMenu.hiddenMenu {
+      left: 0px; }
+      .leftMenu.hiddenMenu > .pullOutIcon {
+        transform: rotate(0deg); }
+    .leftMenu .pullOutIcon {
+      transform: rotate(180deg); } }
+.leftMenu .menuContainer {
+  width: 100%;
+  max-width: 300px;
+  position: relative;
+  float: right;
+  text-align: right;
+  right: 0px;
+  top: 0px;
+  padding: 20px; }
+  .leftMenu .menuContainer h2 {
+    color: white;
+    font-family: "Manjari", sans-serif;
+    padding-left: 0px;
+    padding-right: 0px; }
+    .leftMenu .menuContainer h2 span {
+      color: #5386E4; }
+  .leftMenu .menuContainer .mainNav {
+    font-size: 0px; }
+    .leftMenu .menuContainer .mainNav > a, .leftMenu .menuContainer .mainNav .navDrop > a {
+      font-size: medium;
+      color: #fff;
+      text-decoration: none;
+      display: block;
+      width: 100%;
+      padding: 15px;
+      transition: all 0.2s;
+      -webkit-transition: all 0.2s; }
+      .leftMenu .menuContainer .mainNav > a:hover, .leftMenu .menuContainer .mainNav .navDrop > a:hover {
+        background-color: #262626; }
+    .leftMenu .menuContainer .mainNav .navDrop > a > .dropArrow {
+      float: left;
+      display: inline-block;
+      transition: 0.2s;
+      -webkit-transition: 0.2s; }
+    .leftMenu .menuContainer .mainNav .navDrop .activeDrop {
+      background-color: #262626; }
+      .leftMenu .menuContainer .mainNav .navDrop .activeDrop > .dropArrow {
+        transform: rotate(180deg); }
+    .leftMenu .menuContainer .mainNav .navDropBox {
+      font-size: medium;
+      color: white;
+      background-color: #262626;
+      display: none; }
+      .leftMenu .menuContainer .mainNav .navDropBox a {
+        transition: all 0.2s;
+        -webkit-transition: all 0.2s;
+        color: white;
+        text-decoration: none;
+        width: 100%;
+        display: block;
+        padding: 15px; }
+        .leftMenu .menuContainer .mainNav .navDropBox a:hover {
+          border-right: 4px solid white; }
+
+.contentBox {
+  height: 100%;
+  overflow-x: auto;
+  font-family: "Open Sans", sans-serif; }
+  @media (min-width: 768px) {
+    .contentBox {
+      width: 60%;
+      display: block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      padding: 50px;
+      padding-top: 10px;
+      transition: all 0.4s;
+      -webkit-transition: all 0.4s; }
+      .contentBox.fullContent {
+        width: 100%; } }
+  @media (max-width: 768px) {
+    .contentBox {
+      width: 100%;
+      display: block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      padding: 50px;
+      padding-top: 10px;
+      transition: all 0.4s;
+      -webkit-transition: all 0.4s; } }
+  .contentBox h3 {
+    color: #4E598C; }
+
+/*# sourceMappingURL=styles.css.map */
